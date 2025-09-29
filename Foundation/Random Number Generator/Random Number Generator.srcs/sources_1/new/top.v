@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Engineer: 
+// Engineer: David Mead
 // 
 // Create Date: 24.09.2025 23:15:26
 // Design Name: Random Number Gen
@@ -8,14 +8,8 @@
 // Project Name: FPGA Foundations
 // Description: 
 //      Creating a number gen that can be used as a dice.
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-
 
 module top(
     input clk,
@@ -96,8 +90,5 @@ module top(
             end
         endcase 
       end
-
-    
-    
     
 endmodule

@@ -1,5 +1,17 @@
 `timescale 1ns / 1ps
 
+//////////////////////////////////////////////////////////////////////////////////
+// Engineer: David Mead
+// 
+// Create Date: 29.09.2025 23:47
+// Design Name: Random Number Gen
+// Module Name: counter
+// Project Name: FPGA Foundations
+// Description: 
+//      counter for converting 125MHz clk to 1Hz clk 
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
 module counter #(parameter FREQ = 62499999)(
     input clk,
     output reg clk_out =0

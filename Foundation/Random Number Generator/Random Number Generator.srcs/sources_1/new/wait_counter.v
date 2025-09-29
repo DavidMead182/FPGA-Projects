@@ -1,4 +1,15 @@
 `timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Engineer: David Mead
+// 
+// Create Date: 29.09.2025 23:47
+// Design Name: Random Number Gen
+// Module Name: wait_counter
+// Project Name: FPGA Foundations
+// Description: 
+//      Basic 2 bit counter module
+// 
+//////////////////////////////////////////////////////////////////////////////////
 
 module wait_counter(
        input wire clk,

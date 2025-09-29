@@ -1,4 +1,15 @@
 `timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Engineer: David Mead
+// 
+// Create Date: 29.09.2025 23:47
+// Design Name: Random Number Gen
+// Module Name: linear_feedback_shift_reg
+// Project Name: FPGA Foundations
+// Description: 
+//      module uses a linear feedback shift reg to create pseudo random number
+// 
+//////////////////////////////////////////////////////////////////////////////////
 
 module linear_feedback_shift_reg(
     input clk,
