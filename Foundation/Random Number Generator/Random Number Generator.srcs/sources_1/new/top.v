@@ -36,6 +36,9 @@ module top(
     .count(count)
     );
     
+    wire [3:0] random;
+    linear_feedback_shift_reg rand_number ( clk_1hz, random);
+    
     // FSM
     // [00] IDLE State -> no lights waiting for button press 
     // [01] LIGHTS state -> after button press -> flashing lights
@@ -88,7 +91,7 @@ module top(
             end
             NUMBER: begin
                 clk_reset = 0;
-                led[3:0] = 4'b0110; //replace this with a FPGA compatable random number generator
+                led[3:0] = random;
                 next_state = IDLE;
             end
         endcase 
