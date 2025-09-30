@@ -84,10 +84,10 @@ module top(
                 endcase
             end
             NUMBER: begin
-                clk_reset = 0;
+                clk_reset = 1;
                 led[3:0] = random;
                 next_state = IDLE;
-            end
+                end 
         endcase 
       end
     
