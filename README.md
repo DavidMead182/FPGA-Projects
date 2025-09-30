@@ -1,5 +1,11 @@
 # FPGA-Projects
 Repo containing all my fpga projects. No matter, how big or small
+### Hardware & Software used
+
+| Category       | Details                                                                 |
+|----------------|-------------------------------------------------------------------------|
+| **FPGA Board** | [Zybo Z7 – Zynq-7000 ARM/FPGA SoC Development Board](https://digilent.com/reference/programmable-logic/zybo-z7/start) |
+| **Software**   | Xilinx **Vivado**                                                       |
 
 ## Foundation Projects
 These projects were completed to build convidence when using my FPGA board and to learn the basics of verilog. Below is a table each of my projects in this directory.
@@ -13,4 +19,6 @@ These projects were completed to build convidence when using my FPGA board and t
 
 These are the projects that then lead me to develop reusable modules I can use in later more advanced projects.
 
-# TABLE OF DIRS FOR MY REUSABLE MODULES
+### TABLE OF DIRS FOR MY REUSABLE MODULES
+
+
