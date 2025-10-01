@@ -17,7 +17,17 @@ These projects were completed to build convidence when using my FPGA board and t
 | LED PWM                  | Implements pulse-width modulation to control LED brightness.     | [Foundation/LED PWM](Foundation/LED%20PWM)         | Pulse width modulation  |
 | Basic UART Operation     | UART transmitter to send data between FPGA and PC terminal.      | [Foundation/Basic UART operation](Foundation/Basic%20UART%20operation) | Serial comms, FSM, baud generation |
 
-These are the projects that then lead me to develop reusable modules I can use in later more advanced projects.
+## Intermediate Projects
+These projects were completed to build convidence when using my FPGA board for more complex and multi module designs, and use of differnet more complex protocols
+
+| Project Name            | Description                                                      | Directory Link                                     | Topics Covered                     |
+|--------------------------|------------------------------------------------------------------|----------------------------------------------------|------------------------------------|
+
+## Advanced Projects
+These projects were completed to show what I can do on FPGA, using previous knowledge to build more real world functional designs
+
+| Project Name            | Description                                                      | Directory Link                                     | Topics Covered                     |
+|--------------------------|------------------------------------------------------------------|----------------------------------------------------|------------------------------------|
 
 ## Project to do list
 
