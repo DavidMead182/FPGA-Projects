@@ -19,6 +19,16 @@ These projects were completed to build convidence when using my FPGA board and t
 
 These are the projects that then lead me to develop reusable modules I can use in later more advanced projects.
 
-### TABLE OF DIRS FOR MY REUSABLE MODULES
+## Project to do list
 
+| Project Name              | Type         |
+|----------------------------|--------------|
+| Traffic Light Controller   | Foundation   |
+| UART Receiver (with TX/RX) | Intermediate |
+| VGA Signal Generator       | Intermediate |
+| SPI Master (talk to sensor)| Intermediate |
+| Digital Audio Output (PWM/I²S) | Intermediate |
+| Simple CPU (RISC-V or Custom) | Advanced    |
+| Ethernet MAC Controller    | Advanced    |
 
+Alongside these projects, develop a folder of resualble modules.
