@@ -112,7 +112,7 @@ void EMA(int long_EMA, int short_EMA) {
             double short_adj_ema = (stockPrices[i].adjClose * multiplier_short) + emaData[i-1].EMA_50_adjClose * (1 - multiplier_short);
             emaData.push_back({stockPrices[i].date, sumLong_close / long_EMA, short_close_ema, sumLong_adjClose / long_EMA, short_adj_ema});
         }
-        else if (i > long_EMA) {
+        else if (i > long_EMA-1) {
             double short_close_ema = (stockPrices[i].close * multiplier_short) + emaData[i-1].EMA_50_close * (1 - multiplier_short);
             double short_adj_ema = (stockPrices[i].adjClose * multiplier_short) + emaData[i-1].EMA_50_adjClose * (1 - multiplier_short);
 
