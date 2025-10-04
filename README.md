@@ -22,7 +22,7 @@ These projects were completed to build convidence when using my FPGA board for m
 
 | Project Name            | Description                                                      | Directory Link                                     | Topics Covered                     |
 |--------------------------|------------------------------------------------------------------|----------------------------------------------------|------------------------------------|
-| Exponential Moving Average | Project to show how a simple formula can be created in C++ and then translated into verilog | [Intermediate/Exponatial Moving Average](Intermediate/Exponatial%Moving%Average) | TO BE FILLED OUT |
+| Exponential Moving Average | Project to show how a simple formula can be created in C++ and then translated into verilog | [Intermediate/Exponatial Moving Average](Intermediate/Exponatial%20Moving%20Average) | TO BE FILLED OUT |
 
 ## Advanced Projects
 These projects were completed to show what I can do on FPGA, using previous knowledge to build more real world functional designs
