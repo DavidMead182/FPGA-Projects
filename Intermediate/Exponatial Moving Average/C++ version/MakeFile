@@ -1,8 +1,8 @@
-
 run:
 	clean
 	g++ EMA.cpp -o EMA
 	./EMA
+	python EMA_RESULTS.py
 
 clean:
 	rm -f EMA

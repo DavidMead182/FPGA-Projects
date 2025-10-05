@@ -14,7 +14,7 @@
 // Dependencies: 
 // 
 // Revision:
-// Revision 0.01 - File Created
+// Revision 0.01 - File Createds
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
@@ -23,10 +23,14 @@
 module tb_ema;
 
     // File I/O variables
-    integer file, status;
+    integer file, status, outfile,days;
     real price;
 
     reg clk = 0;
+    reg reset = 0;
+    wire buy;
+    wire sell;
+    wire holding;
     real close_price;
 
     // Variables to store EMA outputs for display
@@ -36,7 +40,11 @@ module tb_ema;
     // Instantiate your EMA module
     top #(200, 50, 2) uut (
         .clk(clk),
-        .close_price(close_price)
+        .close_price(close_price),
+        .buy(buy),
+        .sell(sell),
+        .holding(holding),
+        .reset(reset)
     );
 
     // Clock generator
@@ -46,12 +54,25 @@ module tb_ema;
     // Feed input data
    
     initial begin
-        // Open the file for reading
+         // Open the file for reading
         file = $fopen("C:/Users/david/FPGA_REPOS/FPGA-Projects/Intermediate/Exponatial Moving Average/Data/APPL_closing_prices.txt", "r");
         if (file == 0) begin
             $display("ERROR: Could not open file!");
             $finish;
         end
+        
+        // Open output CSV
+        outfile = $fopen("C:/Users/david/FPGA_REPOS/FPGA-Projects/Intermediate/Exponatial Moving Average/Data/simulation_results.csv", "w");
+        if (outfile == 0) begin
+            $display("ERROR: Could not open output file!");
+            $finish;
+        end
+
+        
+        #10
+        reset =1'b1;
+        #30
+        reset =1'b0;
 
         // Read values one by one
         while (!$feof(file)) begin
@@ -63,17 +84,19 @@ module tb_ema;
         end
         #20;
         $fclose(file);
+        $fclose(outfile);
         $display("All data processed. Finishing simulation.");
         $finish;
     end
 
     // Display EMA outputs at each clock edge
     always @(posedge clk) begin
-        EMA_Short_val = uut.EMA_Short; // Read internal real from module
-        EMA_Long_val  = uut.EMA_Long;  // Read internal real from module
-
-        $display("Time=%0t | Close=%.4f | EMA_Short=%.4f | EMA_Long=%.4f",
-                 $time, close_price, EMA_Short_val, EMA_Long_val);
+        EMA_Short_val = uut.EMA_Short;
+        EMA_Long_val  = uut.EMA_Long;
+        days  = uut.days;
+    
+        // Write current values to file
+        $fwrite(outfile, "%d,%b,%b,%b,%f,%f,%b\n", days, buy, sell, holding, EMA_Short_val, EMA_Long_val, reset);
     end
 
 endmodule
