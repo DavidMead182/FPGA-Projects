@@ -15,14 +15,14 @@ These projects were completed to build convidence when using my FPGA board and t
 | Blinking LED             | First FPGA project: simple clock divider toggling an LED.        | [Foundation/Blinking LED](Foundation/Blinking%20LED) | Clock dividers, sequential logic   |
 | Random Number Generator  | Generates a pseudo-random number displayed via LEDs.             | [Foundation/Random Number Generator](Foundation/Random%20Number%20Generator) | LFSR, state machines   |
 | LED PWM                  | Implements pulse-width modulation to control LED brightness.     | [Foundation/LED PWM](Foundation/LED%20PWM)         | Pulse width modulation  |
-| Basic UART Operation     | UART transmitter to send data between FPGA and PC terminal.      | [Foundation/Basic UART operation](Foundation/Basic%20UART%20operation) | Serial comms, FSM, baud generation |
+<!-- | Basic UART Operation     | UART transmitter to send data between FPGA and PC terminal.      | [Foundation/Basic UART operation](Foundation/Basic%20UART%20operation) | Serial comms, FSM, baud generation | -->
 
 ## Intermediate Projects
 These projects were completed to build convidence when using my FPGA board for more complex and multi module designs, and use of differnet more complex protocols
 
 | Project Name            | Description                                                      | Directory Link                                     | Topics Covered                     |
 |--------------------------|------------------------------------------------------------------|----------------------------------------------------|------------------------------------|
-| Exponential Moving Average | Project to show how a simple formula can be created in C++ and then translated into verilog | [Intermediate/Exponatial Moving Average](Intermediate/Exponatial%20Moving%20Average) | TO BE FILLED OUT |
+| Exponential Moving Average | Project to show how a simple formula can be created in C++ and then translated into systemVerilog | [Intermediate/Exponatial Moving Average](Intermediate/Exponatial%20Moving%20Average) | TO BE FILLED OUT |
 
 Exponential Moving Average
 Here is the output from the C++ version of EMA, this can be created if you run 'make run' in the [Intermediate/Exponatial Moving Average/C++ Version](Intermediate/Exponatial%20Moving%20Average/C++%20version)
