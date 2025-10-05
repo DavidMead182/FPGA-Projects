@@ -24,10 +24,12 @@ These projects were completed to build convidence when using my FPGA board for m
 |--------------------------|------------------------------------------------------------------|----------------------------------------------------|------------------------------------|
 | Exponential Moving Average | Project to show how a simple formula can be created in C++ and then translated into verilog | [Intermediate/Exponatial Moving Average](Intermediate/Exponatial%20Moving%20Average) | TO BE FILLED OUT |
 
-EMA
+Exponential Moving Average
 Here is the output from the C++ version of EMA, this can be created if you run 'make run' in the [Intermediate/Exponatial Moving Average/C++ Version](Intermediate/Exponatial%20Moving%20Average/C++%20version)
+
 <img width="1871" height="873" alt="image" src="https://github.com/user-attachments/assets/6b43eeed-2323-45c7-8837-d07d47308079" />
 
+Here is the systemVerilog version, it sends signals when the stock should be bought and sold.
 
 ## Advanced Projects
 These projects were completed to show what I can do on FPGA, using previous knowledge to build more real world functional designs
