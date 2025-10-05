@@ -90,7 +90,7 @@ void EMA(int long_EMA, int short_EMA) {
     double multiplier_short = smoothing / (1 + short_EMA);
 
     // Initialise first EMA with SMA
-    double sumShort_close, sumLong_close, sumShort_adjClose, sumLong_adjClose;
+    double sumShort_close = 0.0, sumLong_close = 0.0, sumShort_adjClose = 0.0, sumLong_adjClose = 0.0;
 
     for (size_t i = 0; i < stockPrices.size(); i++) {
         //SMA for first EMA value
