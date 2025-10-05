@@ -30,6 +30,8 @@ Here is the output from the C++ version of EMA, this can be created if you run '
 <img width="1871" height="873" alt="image" src="https://github.com/user-attachments/assets/6b43eeed-2323-45c7-8837-d07d47308079" />
 
 Here is the systemVerilog version, it sends signals when the stock should be bought and sold.
+<img width="1916" height="953" alt="image" src="https://github.com/user-attachments/assets/a0e6384c-6c9c-4dd3-8ff1-a271c749dec4" />
+
 
 ## Advanced Projects
 These projects were completed to show what I can do on FPGA, using previous knowledge to build more real world functional designs
